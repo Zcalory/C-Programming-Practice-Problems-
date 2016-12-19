@@ -1,4 +1,4 @@
-//2.2
+//2.3
 //Question: Input the three lengths of sides. Judge whether they can shape a triangle, if can, output the kind of triangle.
 
 #include<iostream>
