@@ -77,3 +77,10 @@ If the "constant" equals 1 then compiles the "program1", otherwise compiles the 
 `#endif`
 
 if the "identifier" has never been defined, compiles the "program"; otherwise ingores it.
+
+The third kind of conditional compilation often used in the ".h" files to avoid the error of "redefinition". 
+And to avoid this problem, try to separate **statement** and **definition**:
+
+In the ".h" files, writes only **data type(s**) and **function statement(s)**;
+
+in the ".cpp" files, writes **definition(s) of variable and funtion**.
