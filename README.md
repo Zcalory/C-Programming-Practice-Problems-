@@ -16,10 +16,6 @@ This repository is created to write codes in C++ language.
 
 1.
 
-`#if constant`  
-`program`  
-`#endif`
-
     #if constant    
     program  
     #endif  
@@ -28,11 +24,11 @@ If the "constant" equals 1 then compiles the "program".
 
 2.
 
-`#if 常量表达式`  
-`程序文本1`  
-`#else`  
-`程序文本2`  
-`#endif`  
+    `#if 常量表达式`  
+    `程序文本1`  
+    `#else`  
+    `程序文本2`  
+    `#endif`  
 
 若“常量表达式”为1，则“程序文本1”参与编译,否则“程序文本2”参与编译。
 
