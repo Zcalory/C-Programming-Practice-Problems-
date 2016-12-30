@@ -16,9 +16,9 @@ This repository is created to write codes in C++ language.
 
 1.
 
-`#if constant`  
-`program`  
-`#endif`
+`#if constant  
+program  
+#endif`
 
 If the "constant" equals 1 then compiles the "program". 
 
