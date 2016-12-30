@@ -7,9 +7,9 @@ This repository is created to write codes in C++ language.
 ####条件编译/conditional compilation
 1. 
 
-`#if 常量表达式`  
-`程序文本`  
-`#endif`
+    #if 常量表达式  
+    程序文本  
+    #endif
 
 
 若“常量表达式”为1，则“程序文本”参与编译。
