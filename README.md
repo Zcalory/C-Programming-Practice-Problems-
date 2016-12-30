@@ -8,7 +8,7 @@ This repository is created to write codes in C++ language.
 
 1.
 
-    #if 常量表达式 
+    #if 常量表达式  
     程序文本  
     #endif
 
