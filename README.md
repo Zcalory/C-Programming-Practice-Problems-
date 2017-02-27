@@ -66,3 +66,31 @@ And to avoid this problem, try to separate **statement** and **definition**:
 
 In the ".h" files, writes only **data type(s**) and **function statement(s)**;  
 in the ".cpp" files, writes **definition(s) of variable and funtion**.
+
+#### 数组的动态内存分配  
+利用  `new` 与 `delete` 进行动态内存的分配与删除  
+动态创建一维数组：
+```C++
+int num=20；//num可作为变量，并随时对其进行赋值
+int *A=NULL；//利用NULL对指针进行初始化
+A=new int [num];
+...  
+delete []A;//释放内存
+```
+动态创建二维数组：
+```C++
+动态创建double[Row][Col]二维数组
+int ROW = 2;
+int COL = 3;
+double **pvalue  = new double* [ROW]; // 为行分配内存
+
+// 为列分配内存
+for(int i = 0; i < COL; i++) {
+    pvalue[i] = new double[COL];
+}
+//释放内存
+for(int i = 0; i < COL; i++) {
+    delete[] pvalue[i];//需对每行进行一次释放
+}
+delete [] pvalue; 
+```
